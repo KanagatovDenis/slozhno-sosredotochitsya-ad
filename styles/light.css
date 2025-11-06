@@ -1,16 +1,59 @@
 :root.theme-light {
-  --accent-color: #FF8DCB;
-  --title-color: #FFC2E6;
-  --title-shadow: #FF8DCB;
-  --title-decor: #FF8DCB;
-  --section-title-color: #353430;
-  --section-subtitle-color: #353430;
-  --text-color: #353430;
-  --background-color: #FFF1F7;
-  --menu-color: #353430;
-  --menu-hover: rgba(50, 49, 45, 0.4);
-  --rec-color: transparent;
-  --decor-color: #353430;
-  --link-shadow: #FF8DCB;
-  --rec-display: none;
+  --accent-color: var(--basic-pink);
+  --title-color: var(--title-pink);
+  --page-bg-color: var(--almost-white-bg);
+  --header-text-bg-color: var(--basic-pink);
+  --header-text-color: var(--almost-black);
+  --question-bg-color:  var(--almost-white-bg);
+  --question-color:  var(--almost-black);
+  --answer-title-bg-color: var(--basic-pink);
+  --answer-title-color: var(--almost-black);
+  --answer-text-bg-color: var(--almost-white-bg);
+  --answer-text-color: var(--almost-black);
+  --advice-title-bg-color:  var(--basic-pink) ;
+  --advice-title-color: var(--almost-black);
+  --button-color: var(--almost-black);
+  --border-color-opacity: #32312D66;
+  --background-image:  url("../images/cover-image-light.png");
+  --deco-color: var(--almost-black);
+
+
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --accent-color: var(--basic-pink);
+    --title-color: var(--title-pink);
+    --page-bg-color: var(--almost-white-bg);
+    --header-text-bg-color: var(--basic-pink);
+    --header-text-color: var(--almost-black);
+    --question-bg-color:  var(--almost-white-bg);
+    --question-color:  var(--almost-black);
+    --answer-title-bg-color: var(--basic-pink);
+    --answer-title-color: var(--almost-black);
+    --answer-text-bg-color: var(--almost-white-bg);
+    --answer-text-color: var(--almost-black);
+    --advice-title-bg-color:  var(--basic-pink) ;
+    --advice-title-color: var(--almost-black);
+    --button-color: var(--almost-black);
+    --border-color-opacity: #32312D66;
+    --background-image:  url("../images/cover-image-light.png");
+    --deco-color: var(--almost-black);
+  }
+ 
+  .rec::before {
+    display: none;
+  }
+  
+  .rec::after {
+    display: none;
+  }
+}
+
+.theme-light .rec::before {
+  display: none;
+}
+
+.theme-light .rec::after {
+  display: none;
 }
