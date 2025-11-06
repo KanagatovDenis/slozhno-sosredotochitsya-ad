@@ -37,7 +37,7 @@
   font-size: inherit;
   margin: var(--decoration-gap);
   font: inherit;
-  inline-size: 491px;
+  width: fit-content;
   justify-self: end;
 }
 
@@ -417,11 +417,6 @@
 
   .header__theme-menu-list {
     grid-auto-flow: column;
-  }
-
-  .title {
-    grid-row: 2 / 3;
-    grid-column: 1 / 2;
   }
 
   .div_2 {
